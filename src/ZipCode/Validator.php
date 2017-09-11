@@ -55,7 +55,7 @@ final class Validator
         'FK' => 'FIQQ 1ZZ',
         'FM' => '(9694[1-4])(?:[ \\-](\\d{4}))?',
         'FO' => '\\d{3}',
-        'FR' => '\\d{2} ?\\d{3}',
+        'FR' => '\\d{1}(?:A|B|\\d{1}) ?\\d{3}',
         'GB' => 'GIR ?0AA|(?:(?:AB|AL|B|BA|BB|BD|BH|BL|BN|BR|BS|BT|BX|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(?:\\d[\\dA-Z]? ?\\d[ABD-HJLN-UW-Z]{2}))|BFPO ?\\d{1,4}',
         'GE' => '\\d{4}',
         'GF' => '9[78]3\\d{2}',
@@ -69,6 +69,7 @@ final class Validator
         'GT' => '\\d{5}',
         'GU' => '(969(?:[12]\\d|3[12]))(?:[ \\-](\\d{4}))?',
         'GW' => '\\d{4}',
+        'HK' => '999077', //Hong Kong
         'HM' => '\\d{4}',
         'HN' => '\\d{5}',
         'HR' => '\\d{5}',
@@ -113,6 +114,7 @@ final class Validator
         'MK' => '\\d{4}',
         'MM' => '\\d{5}',
         'MN' => '\\d{5}',
+        'MO' => '999078', //Macau
         'MP' => '(9695[012])(?:[ \\-](\\d{4}))?',
         'MQ' => '9[78]2\\d{2}',
         'MT' => '[A-Z]{3} ?\\d{2,4}',
@@ -126,7 +128,7 @@ final class Validator
         'NF' => '2899',
         'NG' => '\\d{6}',
         'NI' => '\\d{5}',
-        'NL' => '[1-9]{1}\\d{3}\s?([A-Z]{2})?',
+        'NL' => '[1-9]{1}\\d{3}([ ]?[A-Z]{2})?',    // Changed: ZipCode cannot start with 0, fixed optional letters
         'NO' => '\\d{4}',
         'NP' => '\\d{5}',
         'NZ' => '\\d{4}',
